@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primer-color: #000000;
+    --segundo-color: #ffffff;
+    --tercer-color: #000000;
+    --cuarto-color:#DDE5B6;
+    --quinto-color: #A98467;
+    --font-titulos: 60px;
+    --font-subtitulos: 32px;
+    --fuente-titulos: "Rozha One", serif;
+    --fuente-primaria: "Josefin Slab", serif;
+    --fuente-secundaria: "Unna", serif;
+}
+
+nav.bg-portafolio{
+ background:#000000;
+ position: fixed;
+ width: 100%;
+ z-index: 999;
+ padding: 0 0 ;
+}
+
+nav .navbar-brand img{
+  width: 200px;
+}
+nav.bg-portafolio ul li a{
+    color: #ffff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+
+}
+nav.bg-portafolio ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s ;
+}
+nav.bg-portafolio ul li a:hover{
+  color: var(--primary-color);  
+}
+nav.bg-portafolio ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+} 
+nav.bg-portafolio ul li.login{
+    margin-left: 300px;
+    margin-right: 30px;
+}
+nav.bg-portafolio ul li.registro a{
+    display: block;
+    padding: 12px;
+    padding-left:30px !important;
+    padding-right: 30px !important;
+    color: #ffff;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+
+#fondo-doble{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+
+.arri{
+    height: 550px;
+    width: 100%;
+    background: url(../img/fondo.jpg);
+    
+}
+
+.abaj{
+    height: 500px;
+    width: 100%;
+    background: var(--tercer-color);
+}
+.abaj h1{
+    position: absolute;
+    color: floralwhite;
+    right: 200px;
+    top: 500px;
+}
+
+
+.arri h1{
+    position: absolute;
+    color: floralwhite;
+    left: 200px;
+    top: 500px;
+}
+
+#PerfilProfesional{
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+    background: #000000;
+}
+
+#PerfilProfesional .circulo{
+    position: absolute;
+    width: 450px;
+	height: 450px;
+	border-radius: 70%;
+    background: url(../img/fototata.jpeg);
+    background-size: cover;
+    top: -700px;
+    left: 600px;
+    z-index: 3;
+}
+
+
+/* hero */
+
+#hero{
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+#hero .cont-foto{
+    position: relative;
+    width: 400px;
+}
+#hero .cont-foto img{
+   z-index: 2; 
+   position: relative;
+   width: 400px;
+}
+#hero .cont-info{
+    padding-left: 70px;
+}
+
+#hero .cont-info h1 span{
+    border-bottom: 12px solid #fff;
+}
+
+#hero .cont-info p{
+    color:   #000000;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 70px;
+    font-size: 20px;
+
+}
+
+#hero .cont-info .destacada p{
+    font-size: 20px;
+
+
+}
+#hero .cont-info button{
+    padding: 6px 40px;
+    background:rgb(0, 0, 0);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius:10px;
+    margin-top:30px;
+}
+
+.btn{
+cursor:pointer;
+	position:relative;
+	padding:10px 20px;
+	background:white;
+	font-size:28px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	transition:all 1s;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:-1px;
+		left:-1px;
+		border-top:5px solid black;
+		border-left:5px solid black;
+	}
+	&:before{
+		bottom:-1px;
+		right:-1px;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+	}
+&:hover{
+ border-top-right-radius:0px;
+ border-bottom-left-radius:0px;
+ background:rgba(0,0,0,.5);
+ color:white;
+&:before,&:after{
+			width:100%;
+			height:100%;
+			border-color:white;
+		}
+	}
+}
+
+/* carrusel de habilidades*/
+
+#Habilidades {
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+#carru-img img {
+    width: 100%;
+    height: auto;
+}
+
+#Habilidades h2 {
+    text-align: center;
+}
+
+.principal {
+    background: rgb(0, 0, 0);
+    padding-top: 60px;
+}
+
+.principal h2 {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-item {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.carousel-item p {
+    color: #fff;
+    padding: 15px;
+}
+
+.carousel-item i {
+    font-size: 70px;
+    color: #fff;
+}
+
+.carousel-item h3 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.carousel-item img {
+    width: 150px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 50%;
+}
+
+/* clases de paginas web */
+
+#Proyectos{
+    width: 100%;
+    position: relative;
+    background: #000000;
+    text-align: left;
+    padding: 150px 0 100px;
+}
+#Proyectos h1{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+#Proyectos p{
+    color: #f5f3e7;
+}
+
+#Proyectos h2{
+  font-size: var(--fontSize-title);
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 70px;
+}
+#Proyectos h2::after{
+    width: 70%;
+    height: 2px;
+    background: #9e7676;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 52%;
+}
+#Proyectos .card-destacadas{
+    border-radius: 4px;
+    position: relative;
+}
+
+#Proyectos .card-destacadas img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+#Proyectos .card-destacadas .cont-info{
+    background: #000000;
+    padding: 14px;
+    border-radius: 0 0 4px 4px ;
+    transition: .4s;
+}      
+#Proyectos .card-destacadas .cont-info:hover{
+    background:#A98467;
+}
+.card-destacadas .cont-info h3{
+    font-size:25px;
+    color: #fff;
+    font-weight: 600;
+}
+.card-destacadas .cont-info p{
+    color: #ffffff;
+    font-size:16px;
+}
+
+/* Carrusel */
+
+.Hobbies {
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+.Hobbies h1{
+   text-align: center;
+
+}
+  
+.carousel-inner .carousel-item img {
+    border-radius: 10px;
+    width: 50%; 
+    margin: auto; 
+}
+  
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.carousel-caption h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 18px; 
+}
+
+/* Estudios */
+#Estudios{
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+
+#Estudios h2{
+    color: #000000;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#Estudios p{
+    font-size: var(--fontSize-parrafos);
+    color:#000000;
+}
+
+#Estudios .plan .accordion-item{
+    border-radius: 20px;
+    margin: 30px;
+    border: 1px solid #e9b67d;
+}
+#Estudios .plan h2{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+#Estudios .plan .accordion-item button{
+    color: #000000;
+    box-shadow: 0 0 0 transparent;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+#Estudios .plan .accordion-item button.accordion-button{
+    background: #DDE5B6;
+    border-bottom: 2px solid #ffffff;
+}
+#Estudios .plan .accordion-item button.accordion-button.collapsed{
+    background: transparent;
+}
+
+#planes .plan .accordion-item .accordion-body{
+    color: #000000;
+    font-size: var(--fontSize-parrafos);
+}
+.accordion-button {
+    display: flex;
+    align-items: center; 
+}
+
+.plan-img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+/* redes */
+
+#redes .row {
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+#redes h1{
+    text-align: center;
+    padding-top: 50px;
+}
+#redes p{
+    text-align: center;
+    padding-top: 50px;
+}
+#redes .card-services {
+    background: #7b7979;
+    border-radius: 4px;
+    padding: 50px 30px 40px;
+    text-align: center;
+    transition: .4s;
+    max-width: 290px;
+    margin-bottom: 30px; 
+}
+
+#redes .card-services:hover {
+    background: #A98467;
+}
+
+#redes .card-services img {
+    background: #ffffff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#redes .card-services h3 {
+    text-align: center; 
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#redes .card-services h4 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+#redes .card-services p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* footer */
+
+footer{
+    padding: 30px;
+    background:#000000;
+    text-align: center;
+    color: #fff;
+}
+
+footer img{
+    width: 220px;
+}
+
+/* Responsive */
+
+@media screen and (min-width:320px) and (max-width:990px){
+    header nav button.navbar-toggler{
+        background: var(--primary-color);
+    } 
+    nav.bg-gym ul li.login{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav.bg-gym ul li.registro a{
+        display: inline-block;
+    }
+    #hero{
+        text-align: center;
+    }
+    #hero .cont-foto{
+        width: 100%;
+    }
+    #hero .cont-foto::before{
+        left: 0;
+    } 
+    #cdestacadas h2::after{
+        width: 25%;
+    }
+}
+
+
+
